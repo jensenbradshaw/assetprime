@@ -18,7 +18,22 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
+    elif message.content.startswith('ap!help'):
+        await message.channel.send('Commands:\n  ap!runs\n  ap!annuals\n  ap!limited\n  ap!oneshots\n  ap!teamups')
+
+    elif message.content.startswith('ap!runs'):
+        await message.channel.send('Moon Knight (1980)\nMoon Knight (1985)\nMarc Spector: Moon Knight (1989)\nMoon Knight (1998)\nMoon Knight (1999)\nMoon Knight (2006)\nVengeance of the Moon Knight (2009)\nMoon Knight (2011)\nMoon Knight (2013)\nMoon Knight (2016)\nMoon Knight (2021)')
+
+    elif message.content.startswith('ap!annuals'):
+        await message.channel.send('Moon Knight Annual (2007)\nMoon Knight Annual (2019)\nMoon Knight Annual (2022)')
+
+    elif message.content.startswith('ap!limited'):
+        await message.channel.send('Moon Knight Special Edition (1983)\nShadowland: Moon Knight (2010)\nMoon Knight: Black, White & Blood (2022)')
+
+    elif message.content.startswith('ap!oneshots'):
+        await message.channel.send('Moon Knight: Divided We Fall (1992)\nMarc Spector: Moon Knight Special Edition (1992)\nMoon Knight: Silent Knight (2008)\nMoon Knight Saga (2009)\nDevil\'s Reign: Moon Knight (2022)')
+
+    elif message.content.startswith('ap!teamups'):
+        await message.channel.send('Ms. Marcel & Moon Knight (2022)')
 
 client.run(os.getenv('TOKEN'))
