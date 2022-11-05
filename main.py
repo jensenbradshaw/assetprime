@@ -22,7 +22,7 @@ async def on_message(message):
         await message.channel.send('Commands:\n  ap!runs\n  ap!annuals\n  ap!limited\n  ap!oneshots\n  ap!teamups')
 
     elif message.content.startswith('ap!runs'):
-        await message.channel.send('Moon Knight (1980)\nMoon Knight (1985)\nMarc Spector: Moon Knight (1989)\nMoon Knight (1998)\nMoon Knight (1999)\nMoon Knight (2006)\nVengeance of the Moon Knight (2009)\nMoon Knight (2011)\nMoon Knight (2013)\nMoon Knight (2016)\nMoon Knight (2021)')
+        await message.channel.send('Moon Knight (1980)\nFist of Khonshu: Moon Knight (1985)\nMarc Spector: Moon Knight (1989)\nMoon Knight: Resurrection War (1998)\nMoon Knight: High Strangers (1999)\nMoon Knight: The Bottom (2006)\nVengeance of the Moon Knight (2009)\nMoon Knight (2011)\nMoon Knight: From the Dead (2014)\nMoon Knight: Welcome to New Egypt (2016)\nMoon Knight: Midnight Mission (2021)')
 
     elif message.content.startswith('ap!annuals'):
         await message.channel.send('Moon Knight Annual (2007)\nMoon Knight Annual (2019)\nMoon Knight Annual (2022)')
