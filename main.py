@@ -13,8 +13,7 @@ tree = discord.app_commands.CommandTree(client)
 
 @tree.command(name = "runs", description = "List the Moon Knight runs")
 async def runs_command(interaction):
-    embed=discord.Embed(title="Moon Knight Runs", description = "Moon Knight (1980)\nFist of Khonshu: Moon Knight (1985)\nMarc Spector: Moon Knight (1989)\nMoon Knight: Resurrection War (1998)\nMoon Knight: High Strangers (1999)\nMoon Knight: The Bottom (2006)\nVengeance of the Moon Knight (2009)\nMoon Knight (2011)\nMoon Knight: From the Dead (2014)\nMoon Knight: Welcome to New Egypt (2016)\nMoon Knight: Midnight Mission (2021)")
-    await interaction.response.send_message(embed)
+    await interaction.response.send_message("Moon Knight (1980)\nFist of Khonshu: Moon Knight (1985)\nMarc Spector: Moon Knight (1989)\nMoon Knight: Resurrection War (1998)\nMoon Knight: High Strangers (1999)\nMoon Knight: The Bottom (2006)\nVengeance of the Moon Knight (2009)\nMoon Knight (2011)\nMoon Knight: From the Dead (2014)\nMoon Knight: Welcome to New Egypt (2016)\nMoon Knight: Midnight Mission (2021)")
 
 @tree.command(name = "annuals", description = "List the Moon Knight annuals")
 async def runs_command(interaction):
